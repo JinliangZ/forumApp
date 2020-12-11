@@ -9,6 +9,8 @@ import Login from "./Pages/Login";
 import Profile from "./Pages/Profile";
 import CreatePost from "./Pages/CreatePost";
 import HttpClient from "./Services/HttpClient";
+import ManagePost from "./Pages/ManagePost";
+import PostDetail from "./Pages/PostDetail";
 
 
 function App() {
@@ -53,6 +55,15 @@ function App() {
 
                 <Route path = '/create-posts'>
                   {user ? <CreatePost /> : <Redirect to = '/login' />}
+                </Route>
+
+                <Route path = '/manage-posts'>
+                  {user ? <ManagePost /> : <Redirect to = '/login' />}
+                </Route>
+
+
+                <Route path = '/posts-detail/:id'>
+                  {user ? <PostDetail /> : <Redirect to = '/login' />}
                 </Route>
 
                 

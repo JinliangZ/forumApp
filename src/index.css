@@ -221,3 +221,58 @@ a{
   background-color: #212121;
   color: #00BCD4;
 }
+
+.post{
+  margin:15px auto;
+ 
+}
+
+.post_tag{
+  text-align: end;  
+}
+
+.post_content{
+  margin: 15px 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span{
+  margin-left:20px
+}
+
+.delete_post{
+  margin-left: 100px;
+}
+
+.user_post{
+  width: 100%;
+  display: flex;
+ 
+}
+
+.user_post div:first-child{
+  width: 80%;
+}
+
+.delete:hover{
+  cursor: pointer;
+}
+
+.post_detail{
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.post_detail_content{
+  margin-top: 50px;
+  text-align: left;
+
+}
+
+

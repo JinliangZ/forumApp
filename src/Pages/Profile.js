@@ -10,6 +10,7 @@ const Profile = () => {
         <h1 className = "page-title">Profile</h1>        
         <PasswordModal >Change password</PasswordModal>
         <button className = "btn"><Link to= '/create-posts' className= "post_link">Create A Post</Link></button>
+        <button className = "btn"><Link to= '/manage-posts' className= "post_link">manage your posts</Link></button>
         </div>
      );
 }

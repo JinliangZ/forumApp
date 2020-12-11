@@ -14,7 +14,8 @@ export default  () =>{
 
     return {
         get: (url, options ={}) => axios.get(url, {...defaultOptions,...options}),
-        post: (url, data, options={}) => axios.post(url, data,{...defaultOptions,...options})
+        post: (url, data, options={}) => axios.post(url, data,{...defaultOptions,...options}),
+        delete: (url,options = {}) => axios.delete(url, {...defaultOptions, ...options})
 
     }
 };
