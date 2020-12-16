@@ -58,7 +58,6 @@ const CreatePost = () => {
                     required
                     name="content" 
                     id="content" 
-                    cols="50" rows="20"
                     value = {content}
                     onChange = {e =>{setContent(e.target.value)}}
                 >

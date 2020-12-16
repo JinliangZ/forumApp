@@ -1,7 +1,7 @@
 import React, { Component , useEffect, useState} from 'react';
 import HttpClient from '../Services/HttpClient';
 import moment from 'moment';
-import { useHistory} from 'react-router-dom';
+import { Link, useHistory} from 'react-router-dom';
 import { useContext } from 'react';
 import AppContext from '../Contexts/AppContext';
 
@@ -50,8 +50,8 @@ const ManagePost = () => {
                                     <span> {when}</span>
                                 </div>
                         </div>
-                        <div className = 'delete_post'>
-                            <a className ="delete" data-id= {post._id}><img src="/trashcan.svg" alt="delet_post" onClick={deletPosts}/></a>
+                        <div className = 'delete_post' onClick={deletPosts}>
+                            <Link className ="delete" data-id= {post._id}><img src="/trashcan.svg" alt="delet_post" /></Link>
                         </div>
                     </div>
                 
